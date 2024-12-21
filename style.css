@@ -1,0 +1,142 @@
+ /* General Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body and Overall Layout */
+  body {
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f8f9fa;
+    color: #333;
+  }
+
+  /* Header and Navigation */
+  header {
+    background-color: #003366; /* Deep Blue */
+    color: white;
+    padding: 20px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+    font-weight: bold;
+  }
+
+  .nav a:hover {
+    background-color: #006699; 
+    border-radius: 5px;
+  }
+
+  /* Hero Section (Main Banner) */
+  .hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('./img/restorent.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+
+    color: rgb(251, 4, 4);
+    font-size: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    font-family: 'Georgia', serif;
+  }
+
+  /* Menu Section */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: white;
+  }
+
+  .menu-item {
+    width: 30%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 15px;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .menu-item h3 {
+    padding: 10px;
+    background-color: #003366;
+    color: gold;
+    margin-top: -1px;
+    font-family: 'Georgia', serif;
+  }
+
+  .menu-item p {
+    padding: 10px;
+    color: #555;
+  }
+
+  .menu-item .price {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffb84d;
+    padding-bottom: 15px;
+  }
+
+  /* Footer Section */
+  footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer a {
+    color: #ffb84d; 
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .menu-item {
+      width: 45%;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .menu-item {
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
